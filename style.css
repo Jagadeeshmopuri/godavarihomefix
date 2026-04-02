@@ -5,12 +5,11 @@ body {
 }
 
 header {
-  background: #007bff;
+  background: linear-gradient(to right, #007bff, #00c6ff);
   color: white;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
 }
-
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -21,10 +20,15 @@ header {
 .card {
   background: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
 button {
   background: #007bff;
   color: white;

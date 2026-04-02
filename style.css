@@ -39,20 +39,13 @@ body {
 
 .card {
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-button {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+.card button {
+  margin-top: 15px;
+  width: 100%;
 }

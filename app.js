@@ -1,9 +1,19 @@
 function bookService(service) {
-  const phone = "917780178447";
+  document.getElementById("service").value = service;
+  window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+}
 
-  const message = `Hello, I found GodavariHomeFix. I need ${service} service in Rajahmundry/Kakinada`;
+function submitForm(event) {
+  event.preventDefault();
 
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const location = document.getElementById("location").value;
+  const service = document.getElementById("service").value;
 
-  window.open(url, "_blank");
+  const message = `New Booking:%0AName: ${name}%0APhone: ${phone}%0ALocation: ${location}%0AService: ${service}`;
+
+  const whatsappURL = `https://wa.me/917780178447?text=${message}`;
+
+  window.open(whatsappURL, "_blank");
 }

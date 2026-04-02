@@ -45,48 +45,8 @@ body {
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
 
-.card h3 {
-  margin-bottom: 15px;
-}
-
-.card button {
-  width: 100%;
-  padding: 10px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* WHY SECTION */
-.why {
-  text-align: center;
-  padding: 30px;
-}
-
-.why ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* FOOTER */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-.icon {
-  width: 30px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.card h3 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
